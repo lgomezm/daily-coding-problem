@@ -31,42 +31,42 @@ def largestBST(node):
     else:
         return largestRight, sizeRight
 
-largest, count = largestBST(None)
-print(largest, count) # Should print: None, 0
+largest, size = largestBST(None)
+print(largest, size) # Should print: None, 0
 
-largest, count = largestBST(Node(1))
-print(largest.value, count) # Should print: 1, 1
+largest, size = largestBST(Node(1))
+print(largest.value, size) # Should print: 1, 1
 
-largest, count = largestBST(Node(2, Node(1)))
-print(largest.value, count) # Should print: 2, 2
+largest, size = largestBST(Node(2, Node(1)))
+print(largest.value, size) # Should print: 2, 2
 
-largest, count = largestBST(Node(1, right=Node(2)))
-print(largest.value, count) # Should print: 1, 2
+largest, size = largestBST(Node(1, right=Node(2)))
+print(largest.value, size) # Should print: 1, 2
 
-largest, count = largestBST(Node(1, left=Node(2)))
-print(largest.value, count) # Should print: 2, 1
+largest, size = largestBST(Node(1, left=Node(2)))
+print(largest.value, size) # Should print: 2, 1
 
-largest, count = largestBST(Node(2, right=Node(1)))
-print(largest.value, count) # Should print: 1, 1
+largest, size = largestBST(Node(2, right=Node(1)))
+print(largest.value, size) # Should print: 1, 1
 
-largest, count = largestBST(Node(2, Node(1), Node(3)))
-print(largest.value, count) # Should print: 2, 3
+largest, size = largestBST(Node(2, Node(1), Node(3)))
+print(largest.value, size) # Should print: 2, 3
 
-largest, count = largestBST(Node(1, Node(2), Node(3)))
-print(largest.value, count) # Should print: 3, 1
+largest, size = largestBST(Node(1, Node(2), Node(3)))
+print(largest.value, size) # Should print: 3, 1
 
 root = Node(4, Node(2, Node(1), Node(3)))
-largest, count = largestBST(root)
-print(largest.value, count) # Should print: 4, 4
+largest, size = largestBST(root)
+print(largest.value, size) # Should print: 4, 4
 
 root = Node(4, Node(2, Node(1), Node(3)), Node(6, Node(8), Node(7)))
-largest, count = largestBST(root)
-print(largest.value, count) # Should print: 2, 3
+largest, size = largestBST(root)
+print(largest.value, size) # Should print: 2, 3
 
 root = Node(4, Node(2, Node(1), Node(3)), Node(6, Node(5), Node(7)))
-largest, count = largestBST(root)
-print(largest.value, count) # Should print: 4, 7
+largest, size = largestBST(root)
+print(largest.value, size) # Should print: 4, 7
 
 root = Node(4, Node(2, Node(1), Node(3, Node(2.5))), Node(6, Node(5), Node(7)))
-largest, count = largestBST(root)
-print(largest.value, count) # Should print: 4, 8
+largest, size = largestBST(root)
+print(largest.value, size) # Should print: 4, 8
